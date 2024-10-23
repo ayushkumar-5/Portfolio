@@ -3,6 +3,8 @@
 This is a personal portfolio website showcasing my skills, experience, and projects. The website is fully responsive and designed using HTML, CSS, and JavaScript. It includes sections such as an about page, services offered, qualifications, and a contact form with Google Maps integration.
 
 - Check Out live Site: <https://ayushkumar-5.github.io/Portfolio/index.html>
+  ![Uploading Screenshot 2024-10-24 at 1.57.50 AM.png…]()
+
 
 ## Features
 
