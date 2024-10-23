@@ -1,0 +1,442 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Product Sans', sans-serif;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark text color for readability */
+}
+
+h2 {
+    text-align: center;
+    color: #150734; /* Dark purple for headings */
+}
+.big {
+  font-size: 4rem; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #ff914d; /* Orange branding */
+}
+
+/* Service Section */
+.service_section {
+    padding: 50px 0;
+    background-color: #fff; /* White background for services */
+}
+
+.service_container {
+    display: flex;
+    justify-content: space-around; /* Space between service boxes */
+    flex-wrap: wrap; /* Wrap items to next line if necessary */
+}
+
+.box {
+    background: #f9f9f9; /* Light background for boxes */
+    border-radius: 10px; /* Rounded corners for boxes */
+    padding: 20px;
+    margin: 10px;
+    width: 200px; /* Fixed width for consistency */
+    text-align: center; /* Centered content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.box.active {
+    border: 2px solid #ff914d; /* Highlight active service */
+}
+
+.img-box img {
+    max-width: 100%; /* Ensure images fit within the box */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.detail-box h5 {
+    color: #150734; /* Dark purple for titles */
+}
+
+.detail-box p {
+    color: #666; /* Gray for paragraph text */
+}
+
+/* Button Styles */
+.btn-box {
+    text-align: center; /* Center button */
+    margin-top: 30px; /* Space above button */
+}
+
+.btn-box a {
+    background-color: #ff914d; /* Orange button */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.btn-box a:hover {
+    background-color: #e68a3e; /* Darker orange on hover */
+}
+
+/* Info Section */
+.info_section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #150734, #29063d); /* Dark gradient for a dynamic look */
+    color: white;
+    text-align: center;
+}
+/* Increase size of phone number and email in the info section */
+.info_contact a {
+    color: white;
+    font-size: 1.5rem; /* Increase the font size for better visibility */
+    font-weight: bold; /* Make it bold */
+}
+
+.info_contact span {
+    font-size: 1.5rem; /* Increase font size for the span containing text */
+    font-weight: bold; /* Add boldness for better emphasis */
+}
+
+.info_contact a:hover {
+    color: #ff7033; /* Darker orange on hover */
+}
+
+.info_social {
+    margin-top: 30px;
+}
+
+.info_social div {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.info_social div:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.info_social img {
+    width: 40px; /* Increase size for a bolder appearance */
+    transition: filter 0.3s ease; /* Smooth hover effect */
+}
+
+.info_social img:hover {
+    filter: brightness(1.2); /* Brighten icons on hover */
+}
+
+/* Footer Section */
+.footer_section {
+    background-color: #111; /* Darker footer for contrast */
+    color: white;
+    padding: 40px 0; /* Increased padding for more space */
+    text-align: center;
+    position: relative; /* Enables overlay effects if needed */
+}
+
+.footer_section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff914d, #ff7033); /* Gradient line for style */
+}
+
+.footer_section a {
+    color: #ff914d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer_section a:hover {
+    color: #e67936; /* Darker orange on hover */
+}
+
+.footer_section p {
+    margin: 0;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8); /* Softer white for subtlety */
+}
+
+.footer_section .copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.6); /* Faded color for copyright text */
+}
+
+.footer_section .back-to-top {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ff914d;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer_section .back-to-top:hover {
+    background-color: #e67936;
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info_section {
+        padding: 40px 0;
+    }
+
+    .info_social img {
+        width: 30px; /* Smaller icons for mobile */
+    }
+
+    .footer_section {
+        padding: 30px 0;
+    }
+
+    .footer_section p {
+        font-size: 1em;
+    }
+
+    .footer_section .back-to-top {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* Navbar container */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it stays on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #150734, #29063d); /* Cool gradient background */
+    padding: 14px 40px; /* Increased padding to give more room */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar brand */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand span {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ff914d; /* Orange branding */
+    
+}
+.navbar-brand span:hover {
+    background-color: #fff;
+    color: #000000;  /* Change color to black on hover */
+    border-radius: 10px;
+    padding: 2.5px;
+}
+.navbar-brand img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+/* Navbar links */
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Pushes nav links to the right */
+}
+
+.nav-item {
+    margin-left: 30px; /* Adds spacing between the nav items */
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase; /* Make text uppercase for a modern look */
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    background-color: #ff914d; /* Orange hover background */
+    color: white;
+    border-radius: 20px; /* Adds rounded corners on hover */
+}
+
+/* Navbar toggle button for mobile */
+.navbar-toggler {
+    display: none;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        background-color: #ff914d; /* Orange for mobile toggle */
+        padding: 10px;
+        border: none;
+    }
+
+    .navbar-toggler .s-1, .navbar-toggler .s-2, .navbar-toggler .s-3 {
+        background-color: white;
+        display: block;
+        height: 3px;
+        width: 25px;
+        margin: 4px 0;
+    }
+
+    .navbar-collapse {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #29063d; /* Darker background for mobile */
+    }
+
+    .navbar-toggler.active + .navbar-collapse {
+        display: flex;
+    }
+
+    .navbar a {
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+        text-align: left;
+        background-color: #29063d; /* Darker background */
+    }
+}
+
+
+/* Welcome Section */
+#welcome {
+    background: linear-gradient(to bottom right, #150734, #29063d);
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#welcome span {
+    color: #ff914d;
+}
+
+#welcome h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#welcome p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+#welcome button {
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#welcome button:hover {
+    background-color: #ff7033;
+    transform: scale(1.05);
+}
+
+#welcome img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Projects Section */
+#project {
+    padding: 70px 0;
+    background-color: #f8f9fa;
+}
+
+#project h2 {
+    text-align: center;
+    color: #150734;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+#project .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#project .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#project .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 70px 0;
+    background-color: #150734;
+    color: white;
+    text-align: center;
+}
+
+#contact h1 {
+    color: #ff914d;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+#contact a {
+    color: #ff914d;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#contact a:hover {
+    color: white;
+    text-decoration: underline;
+}
+

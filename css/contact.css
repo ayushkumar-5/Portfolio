@@ -1,0 +1,368 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2, h1 {
+    font-weight: bold;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand span {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ff914d;
+    transition: color 0.3s;
+}
+
+.navbar-brand span:hover {
+    color: #fff;
+    background-color: #000000;
+    padding: 2.5px;
+    border-radius: 10px;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #ff914d;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        background-color: #ff914d;
+        padding: 10px;
+    }
+
+    .navbar-collapse {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #29063d;
+    }
+
+    .navbar-toggler.active + .navbar-collapse {
+        display: flex;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #ff914d; /* Portfolio theme orange color */
+}
+
+/* Navbar Styles */
+.header_section {
+    background-color: #150734;
+}
+
+.navbar-brand span {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler .s-1, .navbar-toggler .s-2, .navbar-toggler .s-3 {
+    background-color: #fff;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff914d; /* Highlight on hover */
+}
+
+.nav-item.active .nav-link {
+    color: #ff914d; /* Active item color */
+}
+
+/* Contact Section */
+.contact_section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f8f8, #eaeaea); /* Soft gradient background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow around section */
+    text-align: center; /* Center-align all content */
+}
+
+.contact_section .heading_container h2 {
+    font-size: 2.7em; /* Slightly bigger font for impact */
+    color: #150734; /* Dark purple for contrast */
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds spacing between letters */
+}
+
+.contact_section input[type="text"], 
+.contact_section input[type="email"], 
+.contact_section .message-box {
+    width: 100%;
+    max-width: 500px; /* Reduced max width for smaller textboxes */
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 17px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto; /* Centers the input fields */
+    display: block; /* Ensures block-level layout for inputs */
+}
+
+.contact_section input[type="text"]:focus, 
+.contact_section input[type="email"]:focus, 
+.contact_section .message-box:focus {
+    border-color: #ff914d; /* Orange border on focus */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* More prominent shadow on focus */
+    outline: none;
+}
+
+.contact_section .message-box {
+    height: 150px; /* Larger input for message box */
+    resize: none;
+}
+
+.contact_section button {
+    background: linear-gradient(135deg, #ff914d, #ff7033); /* Gradient button */
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 50px; /* Fully rounded button */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Button shadow for depth */
+    display: inline-block; /* Allows centering */
+    margin: 0 auto; /* Center-align button */
+    margin-top: 20px; /* Space above the button */
+}
+
+.contact_section button:hover {
+    background: linear-gradient(135deg, #ff7033, #e6682b); /* Darker gradient on hover */
+    transform: translateY(-3px); /* Lifts button slightly on hover */
+}
+
+.contact_section button:active {
+    transform: translateY(0); /* Removes lift effect when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduces shadow on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact_section {
+        padding: 70px 0;
+    }
+
+    .contact_section input[type="text"], 
+    .contact_section input[type="email"], 
+    .contact_section .message-box {
+        max-width: 90%; /* Adjusts width for smaller screens */
+    }
+
+    .contact_section .heading_container h2 {
+        font-size: 2.2em;
+    }
+
+    .contact_section button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+/* Map Section */
+.map_container iframe {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Info Section */
+.info_section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #150734, #29063d); /* Dark gradient for a dynamic look */
+    color: white;
+    text-align: center;
+}
+
+/* Increase size of phone number and email in the info section */
+.info_contact a {
+    color: white;
+    font-size: 1.5rem; /* Increase the font size for better visibility */
+    font-weight: bold; /* Make it bold */
+}
+
+.info_contact span {
+    font-size: 1.5rem; /* Increase font size for the span containing text */
+    font-weight: bold; /* Add boldness for better emphasis */
+}
+
+.info_contact a:hover {
+    color: #ff7033; /* Darker orange on hover */
+}
+
+.info_social {
+    margin-top: 30px;
+}
+
+.info_social div {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.info_social div:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.info_social img {
+    width: 40px; /* Increase size for a bolder appearance */
+    transition: filter 0.3s ease; /* Smooth hover effect */
+}
+
+.info_social img:hover {
+    filter: brightness(1.2); /* Brighten icons on hover */
+}
+
+/* Footer Section */
+.footer_section {
+    background-color: #111; /* Darker footer for contrast */
+    color: white;
+    padding: 40px 0; /* Increased padding for more space */
+    text-align: center;
+    position: relative; /* Enables overlay effects if needed */
+}
+
+.footer_section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff914d, #ff7033); /* Gradient line for style */
+}
+
+.footer_section a {
+    color: #ff914d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer_section a:hover {
+    color: #e67936; /* Darker orange on hover */
+}
+
+.footer_section p {
+    margin: 0;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8); /* Softer white for subtlety */
+}
+
+.footer_section .copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.6); /* Faded color for copyright text */
+}
+
+.footer_section .back-to-top {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ff914d;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer_section .back-to-top:hover {
+    background-color: #e67936;
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info_section {
+        padding: 40px 0;
+    }
+
+    .info_social img {
+        width: 30px; /* Smaller icons for mobile */
+    }
+
+    .footer_section {
+        padding: 30px 0;
+    }
+
+    .footer_section p {
+        font-size: 1em;
+    }
+
+    .footer_section .back-to-top {
+        right: 15px;
+        bottom: 15px;
+    }
+}
