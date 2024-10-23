@@ -2,6 +2,8 @@
  
 This is a personal portfolio website showcasing my skills, experience, and projects. The website is fully responsive and designed using HTML, CSS, and JavaScript. It includes sections such as an about page, services offered, qualifications, and a contact form with Google Maps integration.
 
+- Check Out live Site: <https://ayushkumar-5.github.io/Portfolio/index.html>
+
 ## Features
 
 - **Responsive Design**: Works well on all devices (desktop, tablet, and mobile).
@@ -12,26 +14,6 @@ This is a personal portfolio website showcasing my skills, experience, and proje
 - **Social Media Links**: Connects to my social media profiles.
 - **Footer Section**: Includes contact details and a newsletter subscription form.
 
-## Project Structure
-
-
-Portfolio/
-│
-├── css/
-│   └── style.css        # All the CSS styling for the website
-│
-├── images/
-│   ├── plug.png         # Placeholder image used in About and Contact sections
-│   ├── fb.png           # Social media icons for Facebook, Twitter, LinkedIn, Instagram
-│   └── webdeveloper.jpg # Image for About section
-│
-├── index.html           # Main homepage
-├── about.html           # About section
-├── service.html         # Services offered
-├── blog.html            # Qualifications or blog section
-├── contact.html         # Contact form and Google Maps
-├── README.md            # Project documentation (you are here!)
-└── LICENSE              # License information
 
 ## Usage
 
