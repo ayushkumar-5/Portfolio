@@ -56,9 +56,6 @@ Portfolio/
 - **JavaScript**: For interactive elements (minimal usage).
 - **Google Maps API**: For embedding the map in the contact section.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
